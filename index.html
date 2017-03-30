@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <title> Strona główna </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script>
+        if (localStorage.pagecount) {
+            localStorage.pagecount = Number(localStorage.pagecount) + 1;
+        } else {
+            localStorage.pagecount = 1;
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="img/Apple.png" width="20"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">iPhone<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/iPhone.html">iPhone 5</a></li>
+                        <li><a href="pages/iPhone.html">iPhone 6</a></li>
+                        <li><a href="pages/iPhone.html">iPhone 7</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Macbook<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/macbook.html">Macbook</a></li>
+                        <li><a href="pages/macbook.html">Macbook Air</a></li>
+                        <li><a href="pages/macbook.html">Macbook Pro</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">iMac<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/iMac.html">iMac 21.5"</a></li>
+                        <li><a href="pages/iMac.html">iMac 27"</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">iPod<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/iPod.html">iPod Shuffle</a></li>
+                        <li><a href="pages/iPod.html">iPod Nano</a></li>
+                        <li><a href="pages/iPod.html">iPod Touch</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">iPad<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/iPad.html">iPad Mini</a></li>
+                        <li><a href="pages/iPad.html">iPad Air</a></li>
+                        <li><a href="pages/iPad.html">iPad Pro</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Watch<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/watch.html">Apple Watch 1</a></li>
+                        <li><a href="pages/watch.html">Apple Watch 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/pricelist.html">Cennik</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> <script> document.write(localStorage.pagecount)</script></a></li>
+                <li><a href="pages/about.html"><span class="glyphicon glyphicon-briefcase"></span> O firmie</a></li>
+                <li><a href="pages/contact.html"><span class="glyphicon glyphicon-log-in"></span> Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <br><br><br><br>
+        <img src="img/Apple.png" />
+        <br><br><br>
+        <p>Think different</p>
+        <br> <br><br><br><br>
+    </div>
+
+    <div class="container">
+        <div class="row bottom-buffer">
+            <div class="col-sm-4">
+                Urządzenia <br><br>
+                <a href="pages/iPhone.html">iPhone </a>
+                <a href="pages/macbook.html">Macbook</a> <br>
+                <a href="pages/iMac.html">iMac </a>
+                <a href="pages/iPod.html">iPod</a>
+                <a href="pages/iPad.html">iPad</a> <br>
+                <a href="pages/watch.html">Apple Watch </a> <br>
+            </div>
+            <div class="col-sm-4">
+                Informacje <br><br>
+                <a href="pages/about.html">O firmie</a> <br>
+                <a href="pages/contact.html">Kontakt</a> <br>
+                <a href="pages/pricelist.html">Cennik</a> <br>
+            </div>
+            <div class="col-sm-4">
+                Informacje <br><br>
+                <a href="http://www.apple.com">Strona producenta</a> <br>
+                <a href="https://www.facebook.com/apple/?fref=ts">Facebook</a> <br>
+                <a href="https://www.youtube.com/user/Apple">Youtube</a> <br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
